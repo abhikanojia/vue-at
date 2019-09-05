@@ -120,6 +120,7 @@ export default {
         }
       }
       if (this.atwho) {
+        this.$emit('startMention');
         fn()
       } else { // 焦点超出了显示区域 需要提供延时以移动指针 再计算位置
         setTimeout(fn, 10)
